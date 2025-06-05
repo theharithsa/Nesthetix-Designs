@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+9. coming-soon-section
+--------------------------------------------------------------*/
+
+.coming-soon-section{
+
+    .coming-soon-wrap{
+        padding: 20px;
+        position: relative;
+        margin-bottom: 40px;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        background-size: contain;
+        box-shadow: 0px 0px 6.1px 3.9px rgba(28, 31, 86, 0.11);
+    
+        @media(max-width:767px){
+            width: 520px;
+        }
+        @media(max-width:550px){
+            width: 420px;
+        }
+        @media(max-width:450px){
+            width: 295px;
+        }
+    }
+
+    .wpo-wedding-date {
+		text-align: center;
+		padding-bottom: 0;
+
+        .clock-grids{
+            display: flex;
+			justify-content: center;
+            margin-bottom: 50px;
+
+            @media(max-width:550px){
+                margin-bottom: 20px;
+            }
+        }
+
+		@include media-query(1199px) {
+			margin-top: 20px;
+		}
+		@include media-query(991px) {
+			display: flex;
+			justify-content: center;
+			margin-top: 0;
+		}
+
+
+
+		#clock {
+			overflow: hidden;
+			margin-top: 20px;
+
+			@include media-query(530px) {
+				margin-top: 0;
+			}
+
+			> div {
+				float: left;
+				display: table;
+
+				> div {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+
+			> div + div {
+				margin-left: 50px;
+
+				@include media-query(991px) {
+					margin-left: 20px;
+				}
+
+				@include media-query(767px) {
+					margin-left: 10px;
+				}
+			}
+
+			.time {
+				font-family: $heading-font;
+				font-size: 60px;
+				font-size: calc-rem-value(60);
+				line-height: 1em;
+				padding-top: 15px;
+				color: $text-color;
+
+				@include media-query(1300px) {
+					font-size: 40px;
+					font-size: calc-rem-value(40);
+				}
+				@include media-query(767px) {
+					font-size: 40px;
+					font-size: calc-rem-value(40);
+				}
+			}
+
+			span{
+				color: $text-color;
+				font-size: 25px;
+
+				@media(max-width:991px){
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+
+    .coming-soon-text{
+        text-align: center;
+        h2{
+            font-size: 50px;
+
+            @include media-query(767px) {
+                font-size: 30px;
+            }
+        }
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+    .wpo-coming-contact{
+        .form-control{
+          width: 100%;
+          height: 55px;
+          background: none;
+          border: 1px solid #ccc;
+          margin-bottom: 20px;
+
+          &:focus{
+              outline: none;
+              box-shadow: none;
+          }
+        }
+
+        button{
+            height: 55px;
+            background: $theme-primary-color-s2;
+            border: none;
+            color: $white;
+            width: 100%;
+        }
+    }
+}

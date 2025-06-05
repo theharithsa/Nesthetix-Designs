@@ -1,0 +1,390 @@
+/*======================================
+ 6. Home-style-3 
+ =======================================*/
+
+ /* 6.1 wpo-about-area-s3  */
+
+ .wpo-about-area-s3,
+ .wpo-about-area-s4 {
+	 .wpo-about-img{
+		 position: relative;
+		 left: -150px;
+		 text-align: center;
+
+		 @media(max-width:1400px){
+			left: -80px;
+		}
+		 @media(max-width:991px){
+			left: 0px;
+		}
+
+		 .wpo-about-img-text{
+			display: flex;
+			align-items: center;
+			max-width: 350px;
+			margin-top: 20px;
+			position: absolute;
+			right: 0;
+			bottom: 100px;
+			background: $white;
+			box-shadow: 0px 4px 8px 5px rgba(183, 189, 221, 0.25);
+			border-radius: 10px;
+			padding: 30px;
+			text-align: left;
+			z-index: 1;
+
+			@media(max-width:1400px){
+			  display: block;
+			}
+			@media(max-width:1200px){
+			  margin-top: 10px;
+			  display: flex;
+			}
+
+			@media(max-width:991px){
+				right: 50px;
+			}
+
+			@media(max-width:575px){
+			   display: flex;
+			   position: relative;
+			   right: auto;
+			   left: 50%;
+			   transform: translateX(-50%);
+			   bottom: 0;
+			}
+
+			h2{
+				font-size: 60px;
+				color: $dark-gray;
+				font-weight: 600;
+				margin-right: 30px;
+
+				@media(max-width:1400px){
+				   font-size: 40px;
+				   margin-right: 0;
+				 }
+
+				 @media(max-width:1200px){
+				   margin-right: 20px;
+				}
+			}
+
+			p{
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 0;
+				line-height: 170.9%;
+				color: $black;
+
+				@media(max-width:1400px){
+				   font-size: 14px;
+			   }
+			}
+
+			.about-shape{
+				position: absolute;
+				right: -100px;
+				bottom: -100px;
+				z-index: -1;
+			}
+		}
+	 }
+	 .wpo-about-text{
+		padding-left: 0;
+		position: relative;
+		padding-top: 100px;
+		@media(max-width:1400px){
+			padding-top: 75px;
+		}
+		@media(max-width:575px){
+			margin-top: 70px;
+		}
+		@media(max-width:500px){
+			padding-top: 50px;
+		}
+		h1{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 150%;
+			color: #F8F8F8;
+			font-weight: 900;
+			font-size: 200px;
+			line-height: 100px;
+
+			@media(max-width:1885px){
+				font-size: 180px;
+				text-align: right;
+			}
+			@media(max-width:1700px){
+				font-size: 150px;
+			}
+			@media(max-width:1500px){
+				font-size: 145px;
+				text-align: left;
+			}
+			@media(max-width:1400px){
+				font-size: 125px;
+				text-align: left;
+			}
+			@media(max-width:1200px){
+				font-size: 125px;
+				text-align: right;
+			}
+			@media(max-width:991px){
+				text-align: left;
+				right: auto;
+				left: 0;
+			}
+			@media(max-width:767px){
+				font-size: 90px;
+			}
+			@media(max-width:500px){
+				font-size: 60px;
+			}
+		}
+
+		.wpo-about-title{
+			h2{
+				font-size: 50px;
+
+				@media(max-width:1885px){
+					font-size: 40px;
+				}
+				@media(max-width:1500px){
+					font-size: 35px;
+					line-height: 45px;
+				}
+				@media(max-width:1400px){
+					font-size: 30px;
+				}
+			}
+		}
+
+	 }
+ }
+
+ /* 6.2 wpo-service-area-s2  */
+
+ .wpo-service-area-s2,
+ .wpo-service-area-s3{
+	 padding: 0 100px;
+	 padding-bottom: 90px;
+
+	 @media(max-width:1400px){
+		padding: 0 50px;
+	}
+	 @media(max-width:1400px){
+		padding: 0 15px;
+	}
+	 @media(max-width:991px){
+		padding: 0;
+		padding-bottom: 70px;
+	}
+
+	 .wpo-service-item{
+		 margin-bottom: 30px;
+		 .wpo-service-img{
+			 overflow:hidden;
+			 img{
+				 width: 100%;
+				 transform: scale(1);
+				 transition: all .3s;
+			 }
+		 }
+        
+		 &:hover{
+			.wpo-service-img{
+				img{
+					transform: scale(1.2);
+				}
+			}
+		 }
+
+		 .wpo-service-text{
+			box-shadow: 1px 2px 6px 1px rgba(163, 169, 227, 0.25);
+			padding: 20px 30px;
+
+			@media(max-width:1400px){
+				padding: 20px;
+			}
+
+			h2{
+				margin-bottom: 0;
+				font-size: 25px;
+				font-weight: 500;
+
+				@media(max-width:1400px){
+					font-size: 20px;
+				}
+
+				a{
+					color: $dark-gray;
+
+					&:hover{
+						color: $theme-primary-color-s2;
+					}
+				}
+			}
+		 }
+	 }
+ }
+
+  /* 6.3 wpo-project-area-s3  */
+
+  .wpo-project-area-s3{
+	.project-grids{
+        margin: 0;
+        .grid{
+            width: 33.33%;
+            float: left;
+            padding: 0;
+
+			@include media-query(1500px) {
+				padding: 0;
+			}
+			@include media-query(991px) {
+				padding: 0;
+				width: 50%;
+			}
+
+            @include media-query(767px) {
+                width: 100%;
+            }
+    
+            img{
+                width: 100%;
+            }
+
+			&:nth-child(4){
+				width: 50%;
+
+				@include media-query(991px) {
+					img{
+						min-height: 289px;
+						object-fit: cover;
+					}
+				}
+				@include media-query(767px) {
+					width: 100%;
+				}
+			}
+
+			&:nth-child(5){
+				width: 50%;
+
+				@include media-query(991px) {
+					width: 100%;
+				}
+			}
+        }
+	} 
+  }
+
+  /* 6.4 wpo-pricing-section */
+
+.wpo-pricing-section,
+.wpo-pricing-section-s2{
+	.wpo-pricing-wrap{
+		.wpo-pricing-item{
+			box-shadow: 0px 2px 16.8px 3.2px rgba(0, 38, 66, 0.08);
+
+			@media(max-width:991px){
+               margin-bottom: 30px;
+			}
+
+			.wpo-pricing-top{
+				padding: 30px;
+				text-align: center;
+				padding-top: 0;
+				padding-bottom: 0;
+
+				.pricing-thumb{
+					display: inline-block;
+					padding:3px 30px 5px;
+					background: $theme-primary-color;
+					border-bottom-left-radius: 10px;
+					border-bottom-right-radius: 10px;
+
+					span{
+						text-transform: uppercase;
+						color: $white;
+					}
+				}
+
+
+				.wpo-pricing-text{
+					margin-top: 30px;
+
+					h2{
+						color: $dark-gray;
+						font-size: 40px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-bottom: 15px;
+						font-weight: 700;
+						
+						span{
+							font-weight: 500;
+							color: $text-color;
+							font-size: 16px;
+							text-transform: uppercase;
+						}
+					}
+
+					p{
+						padding-bottom: 30px;
+						max-width: 282px;
+						margin: 0 auto;
+						border-bottom:1px solid $theme-primary-color;
+					}
+				}
+			}
+
+			.wpo-pricing-bottom{
+				padding: 40px;
+				padding-top: 35px;
+				text-align: center;
+                .wpo-pricing-bottom-text{
+					ul{
+						list-style: none;
+
+						li{
+							color: $text-light-color;
+							padding-bottom: 15px;
+						}
+					}
+
+					a{
+						font-size: 16px;
+						color: $theme-primary-color;
+						font-weight: 500;
+                        display: inline-block;
+						margin-top: 20px;
+						position: relative;
+						padding: 10px 25px;
+						border: 1px solid $theme-primary-color;
+
+						&:hover{
+							background: $theme-primary-color;
+							color: $white;
+
+							&:before{
+								background-color: $theme-primary-color;
+							}
+						}
+					}
+				}
+			}
+		}
+		.col{
+			&:last-child{
+				.wpo-pricing-item{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

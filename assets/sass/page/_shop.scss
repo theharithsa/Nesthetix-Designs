@@ -1,0 +1,112 @@
+
+/*--------------------------------------------------------------
+14. wpo-shop-page
+--------------------------------------------------------------*/
+.wpo-shop-section {
+	.shop-grids {
+		margin: 0 -15px;
+
+		@include media-query(767px) {
+			margin: 0 -7px;
+		}
+	}
+
+	.grid {
+		width: calc(33.33% - 30px);
+		float: left;
+		margin: 0 15px 30px;
+
+		@include media-query(991px) {
+			width: calc(50% - 30px);
+		}
+
+		@include media-query(767px) {
+			width: calc(50% - 15px);
+			margin: 0 7px 15px;
+		}
+
+		@include media-query(550px) {
+			width: calc(100% - 15px);
+			float: none;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.details {
+		box-shadow: 0px 2px 10px 2px rgba(21, 44, 88, 0.05);
+		text-align: center;
+		padding: 35px 15px;
+
+		h3 {
+			font-size: 20px;
+			font-size: calc-rem-value(20);
+			margin: 0 0 0.5em;
+			font-weight: 700;
+
+			@include media-query(991px) {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+			}
+		}
+
+		h3 a {
+			color: $heading-color;
+		}
+
+		h3 a:hover {
+			color: $theme-primary-color;
+		}
+
+		del {
+			color: $text-color;
+		}
+
+		del + span {
+			display: inline-block;
+			padding-left: 20px;
+		}
+	}
+
+	.add-to-cart {
+		margin-top: 20px;
+
+		a {
+			font-family: $base-font;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			font-weight: 600;
+			color: $theme-primary-color;
+			padding: 12px 20px;
+			border: 2px solid $theme-primary-color;
+			display: inline-block;
+			border-radius: 50px;
+
+
+			@include media-query(767px) {
+				font-size: 12px;
+				font-size: calc-rem-value(12);
+				padding: 8px 18px;
+			}
+		}
+
+		a:hover {
+			background-color: $theme-primary-color;
+			color: $white;
+		}
+
+		a i {
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			display: inline-block;
+			padding-left: 5px;
+		}
+	}
+
+	.grid:hover .add-to-cart a {
+		background-color: $theme-primary-color;
+		color: $white;
+	}
+}

@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+15. wpo-portfolio-single-section
+--------------------------------------------------------------*/
+
+.wpo-portfolio-single-section{
+
+    .portfolio-single-wrap{
+        margin-bottom: 30px;
+    }
+
+    .portfolio-single-img{
+        padding-right: 50px;
+        
+        @media(max-width:991px){
+            padding-right: 0px;
+          }
+    }
+
+    .portfolio-single-text{
+        @media(max-width:991px){
+          padding-top: 40px;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+
+            @media(max-width:550px){
+                font-size: 20px;
+            }
+        }
+
+        span{
+            color: #5880a2;
+            display: block;
+            margin-bottom: 30px;
+
+            @media(max-width:550px){
+                margin-bottom: 20px;
+            }
+        }
+
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .wpo-portfolio-single-content-des{
+        max-width: 380px;
+        flex-basis: 35%;
+    
+        @media(max-width:1200px){
+            flex-basis: 100%;
+            margin-bottom: 40px;
+         }
+    
+        ul{
+            list-style: none;
+            margin-top: 40px;
+    
+            li{
+                  display: flex;
+                  padding: 15px 0;
+                  font-size: 16px;
+                  color: $dark-gray;
+                  font-weight: 600;
+                  border-bottom: 1px solid #ebebeb;
+                  position: relative;
+                  justify-content: space-between;
+                  font-weight: 600;
+    
+                  span{
+                      flex-basis: 70%;
+                      color: $body-color;
+                      font-weight: 400;
+                      margin-bottom: 0;
+                  }
+    
+                &:last-child {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+                &:first-child {
+                     padding-top: 0;
+                }
+            }
+        }
+    }
+
+    .pagi {
+		padding-top: 50px;
+
+		@include media-query(767px) {
+			padding-top: 30px;
+		}
+	}
+
+	.pagi ul {
+		overflow: hidden;
+        list-style: none;
+
+		li {
+			width: 50%;
+			float: left;
+			text-align: center;
+			border: 1px solid #d8e0f1;
+            i{
+                margin: 0 10px;
+            }
+		}
+
+		> li:last-child {
+			margin-left: -1px;
+		}
+
+		a {
+			display: flex;
+			padding: 20px;
+			color: $text-color;
+            align-items: center;
+            justify-content: center;
+		}
+
+		a:hover {
+			background-color: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+	.project-content .pagi {
+		padding-top: 0;
+	}
+}

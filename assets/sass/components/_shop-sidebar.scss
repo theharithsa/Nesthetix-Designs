@@ -1,0 +1,256 @@
+/*------------------------------------
+	shop sidebar
+------------------------------------*/
+.wpo-shop-sidebar{
+
+	@media(max-width:991px){
+        margin-top: 50px;
+	}
+	.widget {
+		h3 {
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 700;
+			margin: 0 0 1.5em;
+			position: relative;
+			text-transform: none;
+			text-transform: uppercase;
+			font-family: $base-font;
+		}
+	}
+
+	> .widget + .widget {
+		margin-top: 65px;
+	}
+
+
+	/*** search-widget ***/
+	.search-widget {
+		form div {
+			position: relative;
+		}
+
+		input {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			width: 100%;
+			height: 60px;
+			border: 1px solid $border-color-s2;
+			padding: 10px;
+
+			&:focus{
+				outline: none;
+				border-color: $theme-primary-color;
+			}
+		}
+
+		form button {
+			background-color: $theme-primary-color;
+			color: $white;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			border-radius: 0;
+			width: 60px;
+			height: 60px;
+
+			i {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+			}
+		}
+	}
+
+
+	
+/*** widget_price_filter ***/
+.widget_price_filter {
+	.ui-corner-all, 
+	.ui-corner-bottom, 
+	.ui-corner-right, 
+	.ui-corner-br {
+		border-radius: 30px;
+	}
+
+	.filter-price {
+		position: relative;
+		font-size: 14px;
+		input {
+			border: 0;
+			padding: 0;
+			display: inline-block;
+			width: auto;
+			position: absolute;
+
+			&:focus {
+				border: 0;
+				outline: none;
+			}
+		}
+
+		button {
+			font-family: $heading-font;
+			background: transparent;
+			color: $theme-primary-color;
+			font-size: 18px;
+			font-size: calc-rem-value(18);
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 0;
+			display: inline-block;
+			border: 0;
+			outline: none;
+			position: absolute;
+			right: 0;
+			z-index: 99;
+			text-decoration: underline;
+
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: underline;
+			}			
+		}
+
+		#amount {
+			color: $black;
+		}
+	}
+
+	#slider-range {
+		height: 3px;
+		background: $section-bg-color;
+		border: 0;
+		border-radius: 50px;
+		margin-bottom: 25px;
+		margin-left: 8px;
+	}
+
+	.ui-state-default, 
+	.ui-widget-content 
+	.ui-state-default, 
+	.ui-widget-header 
+	.ui-state-default {
+		width: 10px;
+		height: 10px;
+		border: none;
+		background: $theme-primary-color-s2;
+		top: -4px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.ui-widget-header{
+		background: $theme-primary-color-s2;
+	}
+}
+
+
+
+	/*** widget_product_categories ***/
+	.widget_product_categories,
+	.woocommerce-widget-layered-nav {
+		font-family: $base-font;
+		.product-categories a,
+		.woocommerce-widget-layered-nav-list a {
+			color: $text-color;
+		}
+
+		.product-categories{
+			list-style: none;
+		}
+
+		.product-categories li,
+		.woocommerce-widget-layered-nav-list li {
+			margin-top: 10px;
+			position: relative;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $border-color-s2;
+
+			&:first-child{
+				margin-top: 0;
+			}
+			&:last-child{
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+
+			a {
+				font-size: 16px;
+				font-size: calc-rem-value(16);
+				font-weight: 500;
+				position: relative;
+			}
+
+			a:hover {
+				text-decoration: underline;
+				color: $black;
+			}
+
+			a:hover:before {
+				border-color: $black;
+			}
+		}
+	}
+
+}
+
+
+/*** widget_best-seller ***/
+
+.widget_best-seller{
+	.wpo-best-seller-item{
+      display: flex;
+	  align-items: center;
+	  margin-bottom: 20px;
+	  &:last-child{
+		  margin-bottom: 0;
+	  }
+
+	  .wpo-best-seller-text{
+		  margin-left: 20px;
+
+		  h4{
+			  font-size: 18px;
+			  font-weight: 600;
+			  color: $text-color;
+			  font-family: $base-font;
+		  }
+
+		  span{
+			  font-size: 16px;
+			  color: #8d8d8d;
+		  }
+	  }
+	}
+}
+
+
+/*** instagram-widget ***/
+
+.wpo-instagram-widget{
+        
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		li{
+		 -ms-flex: 0 0 50%;
+		 -webkit-box-flex: 0;
+		 flex: 0 0 50%;
+		 max-width: 50%;
+		 margin-bottom: 5px;
+		 padding: 0px 3px;
+
+		 img{
+			 width: 100%;
+		 }
+		}
+	}
+ 
+ }

@@ -1,0 +1,93 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?f292c07b15c77b4e938a4b83b18f04e8") format("truetype"),
+url("./flaticon.woff?f292c07b15c77b4e938a4b83b18f04e8") format("woff"),
+url("./flaticon.woff2?f292c07b15c77b4e938a4b83b18f04e8") format("woff2"),
+url("./flaticon.eot?f292c07b15c77b4e938a4b83b18f04e8#iefix") format("embedded-opentype"),
+url("./flaticon.svg?f292c07b15c77b4e938a4b83b18f04e8#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "shopping-cart": "\f101",
+    "search": "\f102",
+    "play": "\f103",
+    "email": "\f104",
+    "location": "\f105",
+    "telephone": "\f106",
+    "linkedin": "\f107",
+    "twitter": "\f108",
+    "facebook-app-symbol": "\f109",
+    "instagram": "\f10a",
+    "quote": "\f10b",
+    "planning": "\f10c",
+    "blueprint": "\f10d",
+    "double-bed": "\f10e",
+    "armchair": "\f10f",
+    "furniture": "\f110",
+    "interior-design": "\f111",
+);
+
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-search:before {
+    content: map-get($flaticon-map, "search");
+}
+.flaticon-play:before {
+    content: map-get($flaticon-map, "play");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-location:before {
+    content: map-get($flaticon-map, "location");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-planning:before {
+    content: map-get($flaticon-map, "planning");
+}
+.flaticon-blueprint:before {
+    content: map-get($flaticon-map, "blueprint");
+}
+.flaticon-double-bed:before {
+    content: map-get($flaticon-map, "double-bed");
+}
+.flaticon-armchair:before {
+    content: map-get($flaticon-map, "armchair");
+}
+.flaticon-furniture:before {
+    content: map-get($flaticon-map, "furniture");
+}
+.flaticon-interior-design:before {
+    content: map-get($flaticon-map, "interior-design");
+}

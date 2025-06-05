@@ -1,0 +1,490 @@
+/*==========================================
+16. wpo-team-single
+===========================================*/
+
+.team-pg-area{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.team-info-img {
+    padding: 25px;
+    box-shadow: 0px 6px 20.1px 4.9px rgba(176, 191, 238,.12);
+
+    @media(max-width:991px){
+        margin-bottom: 40px;
+     }
+
+    img{
+        width: 100%;
+        height: 465px;
+        object-fit: cover;
+
+        @media(max-width:991px){
+           height: 100%;
+        }
+    }
+}
+
+.team-info-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-info-text {
+    box-shadow: 0px 6px 20.1px 4.9px rgba(176, 191, 238, .12);
+    padding: 58px 50px;
+
+    ul{
+        li{
+            font-size: 17px;
+            color: #1d2327;
+            font-weight: 700;
+            margin-bottom: 22px;
+            list-style: none;
+
+            &:last-child{
+                padding-bottom: 0;
+            }
+
+            span{
+                font-size: 16px;
+                color: #8c8c8c;
+                display: inline-block;
+                position: relative;
+                padding-left: 5px;
+                font-weight: 400;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.at-progress{
+    box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
+    padding: 40px 0;
+
+    @media(max-width:991px){
+        padding-bottom: 0;
+    }
+}
+
+
+.team-info-text {
+    h2 {
+        font-size: 27px;
+        font-weight: 700;
+        color: #1d2327;
+        margin-top: 0;
+        margin-bottom: 25px;
+        text-align: center;
+        background: #eee;
+        padding: 20px;
+    }
+}
+.team-info-wrap ul {
+    padding-left: 0;
+}
+.exprience-wrap p {
+    color: #5d5851;
+}
+
+.exprience-wrap{
+    h2{
+        margin-bottom: 20px;
+    }
+}
+
+
+/*progress-design*/
+.progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    overflow: unset;
+}
+
+.progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #ebebeb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-left {
+    left: 0;
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+
+.progress .progress-right {
+    right: 0;
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #fff;
+    font-size: 40px;
+    color: $theme-primary-color;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+
+
+.progress .progress-bar {
+    border-color: $theme-primary-color;
+}
+
+
+.progress-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.progress-name span {
+    font-size: 15px;
+    color: #131058;
+    line-height: 15px;
+}
+
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-left .progress-bar {
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-left .progress-bar {
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(120deg);
+        transform: rotate(120deg);
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(46deg);
+        transform: rotate(46deg);
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 60px;
+    }
+}
+
+.progress:before {
+    position: absolute;
+    left: -14px;
+    top: -15px;
+    width: 120%;
+    height: 120%;
+    background: #fff;
+    content: "";
+    border-radius: 50%;
+}
+
+
+.education-area {
+    max-width: 600px;
+}
+.education-area ul{
+    list-style: none;
+}
+.education-area ul li {
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.education-area ul li:before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $theme-primary-color;
+    content: "";
+}
+
+.ex-wiget {
+    padding-top: 60px;
+
+    ul{
+        list-style: none;
+    }
+}
+
+.ex-wiget h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+.wpo-contact-area .quote-form {
+    padding-left: 0;
+    margin-left: -10px;
+}
+
+.wpo-contact-area{
+    button{
+        border-radius: 0;
+
+        &:after{
+            display: none;
+        }
+    }
+}
+
+.wpo-contact-area .quote-form .form-control{
+    height: 55px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border-color: $theme-primary-color;
+    }
+}
+
+.wpo-contact-area .quote-form textarea.form-control{
+    height: 125px;
+}
+
+.half-col {
+    float: left;
+    width: 50%;
+    padding: 0 10px 5px;
+}
+
+.full-col {
+    padding: 0 10px 5px;
+}
+
+.exprience-area {
+    padding-top: 60px;
+}
+
+@media(max-width: 767px) {
+    .team-info-text {
+        padding: 40px 20px;
+    }
+
+    .team-info-img {
+        padding: 40px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .custom-grid {
+        float: left;
+        width: 50%;
+    }
+
+    .exprience-area {
+        padding-top: 30px;
+    }
+
+}
+
+@media(max-width: 575px) {
+    .half-col {
+        float: none;
+        width: 100%;
+    }
+
+    .lawyer-about.pt-150 {
+        padding-top: 100px !important;
+    }
+}
+
+@media(max-width: 375px) {
+    .custom-grid {
+        float: none;
+        width: 100%;
+    }
+}
+
+.service-sidebar{
+    
+    .wpo-contact-widget{
+        border: 0;
+        background: url(../images/bg-2.jpg) no-repeat center center;
+        position: relative;
+        background-size: cover;
+        z-index: 1;
+        &:before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(22, 57, 103, 0.9);
+            content: "";
+            z-index: -1;
+         }
+    
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            text-align: left;
+            color: $white;
+            margin-bottom: 20px;
+    
+            &::before{
+                background:$white;
+            }
+        }
+    
+        p{
+            color: $white;
+            font-size: 18px;
+        }
+    
+    
+        a{
+            display:inline-block;
+            padding: 10px 20px;
+            border: 1px solid $white;
+            font-size: 18px;
+            color: $white;
+            padding-right: 90px;
+            position: relative;
+            margin-top: 10px;
+    
+            &::before{
+                font-family: "themify";
+                content: "\e628";
+                font-size: 18px;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

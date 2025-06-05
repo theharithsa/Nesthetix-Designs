@@ -1,0 +1,192 @@
+/*======================================
+ 5. Home-style-2 
+ =======================================*/
+
+ /* 5.1 wpo-about-area-s2 */
+
+ .wpo-about-area-s2,
+ .wpo-about-area-s3{
+     .wpo-about-img{
+         &:before{
+             display: none;
+         }
+
+
+         .wpo-about-img-left{
+             float: left;
+             @media(max-width:575px){
+                float: none;
+             }
+             img{
+                 background: #F5F5F5;
+                 padding: 10px;
+
+                 @media(max-width:575px){
+                    width: 100%;
+                 }
+             }
+
+             .wpo-about-img-text{
+                 display: flex;
+                 align-items: center;
+                 max-width: 260px;
+                 margin-top: 20px;
+
+                 @media(max-width:1400px){
+                   display: block;
+                 }
+                 @media(max-width:1200px){
+                   margin-top: 10px;
+                 }
+
+                 @media(max-width:575px){
+                    display: flex;
+                 }
+
+                 h2{
+                     font-size: 60px;
+                     color: $dark-gray;
+                     font-weight: 600;
+                     margin-right: 30px;
+
+                     @media(max-width:1400px){
+                        font-size: 40px;
+                        margin-right: 0;
+                      }
+
+                      @media(max-width:575px){
+                        margin-right: 20px;
+                     }
+                 }
+
+                 p{
+                     font-size: 20px;
+                     font-weight: 600;
+                     margin-bottom: 0;
+                     line-height: 170.9%;
+
+                     @media(max-width:1400px){
+                        font-size: 14px;
+                    }
+                 }
+             }
+         }
+         .wpo-about-img-right{
+             position: absolute;
+             top: 120px;
+             right: 0;
+
+             @media(max-width:1200px){
+               width: 70%;
+               top: 100px;
+             }
+             @media(max-width:991px){
+               width: unset;
+               right: 50px;
+             }
+             @media(max-width:767px){
+                width: 70%;
+                right: 0;
+             }
+             @media(max-width:575px){
+                display: none;
+             }
+             img{
+                 background: #F5F5F5;
+                 padding: 10px;
+
+             }
+         }
+
+
+     }
+
+     .wpo-about-text{
+        @media(max-width:991px){
+            margin-top: 30px;
+        }
+
+         ul.ab-list{
+             list-style: none;
+
+             li{
+                 padding: 5px 0;
+                 padding-left: 30px;
+                 position: relative;
+
+                 &:before{
+                     position: absolute;
+                     left: 0;
+                     top: 50%;
+                     transform: translateY(-50%);
+                     width: 15px;
+                     height: 15px;
+                     content: "";
+                     border: 1px solid $border-color;
+                     border-radius: 50%;
+                 }
+             }
+         }
+     }
+ }
+
+
+ /* 5.2 wpo-project-area-s2 */
+
+.wpo-project-area-s2,
+.wpo-project-area-s3{
+   .project-grids{
+        margin: 0 -7.5px;
+        .grid{
+            width: 33.33%;
+            float: left;
+            padding: 0 7.5px 15px;
+
+			@include media-query(1500px) {
+				padding: 0 5.5px 10px;
+			}
+			@include media-query(991px) {
+				padding: 0 4.5px 8px;
+			}
+    
+            @include media-query(1199px) {
+                width: 50%;
+            }
+    
+            @include media-query(767px) {
+                width: 100%;
+            }
+    
+            img{
+                width: 100%;
+            }
+        }
+	} 
+
+    .wpo-project-wrap{
+		.wpo-project-item{
+			&:hover{
+				.wpo-project-img{
+					.left-border{
+						&:before{
+							width: 160px;
+						}
+						&::after{
+							height: 160px;
+						}
+					}
+
+					.right-border{
+						&:before{
+							width: 160px;
+						}
+						&::after{
+							height: 160px;
+						}
+					}
+				}
+			}
+		}
+
+	}
+}

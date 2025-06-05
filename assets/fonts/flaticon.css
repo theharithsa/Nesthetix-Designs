@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?f292c07b15c77b4e938a4b83b18f04e8") format("truetype"), url("./flaticon.woff?f292c07b15c77b4e938a4b83b18f04e8") format("woff"), url("./flaticon.woff2?f292c07b15c77b4e938a4b83b18f04e8") format("woff2"), url("./flaticon.eot?f292c07b15c77b4e938a4b83b18f04e8#iefix") format("embedded-opentype"), url("./flaticon.svg?f292c07b15c77b4e938a4b83b18f04e8#flaticon") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-shopping-cart:before {
+  content: "";
+}
+
+.flaticon-search:before {
+  content: "";
+}
+
+.flaticon-play:before {
+  content: "";
+}
+
+.flaticon-email:before {
+  content: "";
+}
+
+.flaticon-location:before {
+  content: "";
+}
+
+.flaticon-telephone:before {
+  content: "";
+}
+
+.flaticon-linkedin:before {
+  content: "";
+}
+
+.flaticon-twitter:before {
+  content: "";
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "";
+}
+
+.flaticon-instagram:before {
+  content: "";
+}
+
+.flaticon-quote:before {
+  content: "";
+}
+
+.flaticon-planning:before {
+  content: "";
+}
+
+.flaticon-blueprint:before {
+  content: "";
+}
+
+.flaticon-double-bed:before {
+  content: "";
+}
+
+.flaticon-armchair:before {
+  content: "";
+}
+
+.flaticon-furniture:before {
+  content: "";
+}
+
+.flaticon-interior-design:before {
+  content: "";
+}/*# sourceMappingURL=flaticon.css.map */

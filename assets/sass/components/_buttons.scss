@@ -1,0 +1,121 @@
+.theme-btn,
+.theme-btn-s3,
+.theme-btn-s4 {
+	background: $theme-primary-color;
+	color: $white;
+	display: inline-block;
+	font-weight: 600;
+	padding: 15px 45px;
+	border: 0;
+	text-transform: capitalize;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+	position: relative;
+	font-size: 16px;
+	font-size: calc-rem-value(16);
+	transition: all .3s;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: darken($theme-primary-color, 6%);
+		color: $white;
+
+		&:after {
+			border: 1px solid $theme-primary-color;
+		}
+	}
+
+	&:hover:after {
+		opacity: 1;
+	}
+
+	@include media-query(991px) {
+		font-size: 18px;
+		font-size: calc-rem-value(18);
+	}
+
+	@include media-query(767px) {
+		padding: 12px 18px;
+		font-size: 14px;
+	}
+}
+
+.theme-btn-s2 {
+	background: transparent;
+	color: $theme-primary-color;
+	display: inline-block;
+	font-weight: 600;
+	padding: 15px 45px;
+	border: 1px solid $theme-primary-color;
+	text-transform: capitalize;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+	position: relative;
+	font-size: 16px;
+	font-size: calc-rem-value(16);
+	transition: all .3s;
+
+	z-index: 1;
+	position: relative;
+
+	@include media-query(991px) {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: darken($theme-primary-color, 5%);
+		color: $white;
+	}
+
+	@include media-query(767px) {
+		padding: 12px 18px;
+		font-size: 13px;
+	}
+}
+
+
+.theme-btn-s4{
+	&:hover{
+		background:darken($theme-primary-color, 6%);
+		&:after {
+			border: 1px solid darken($theme-primary-color, 6%);
+		}
+	}
+
+}
+
+
+
+.view-cart-btn {
+	@extend .theme-btn;
+	display: block;
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 10px 45px;
+	background: $theme-primary-color;
+	color: $white;
+
+	
+
+	&:after{
+		display: none;
+	}
+	&:hover{
+		background-color: darken($theme-primary-color, 8%);
+	}
+
+	&.s1{
+		background: transparentize($theme-primary-color, .8);
+		color: $theme-primary-color-s2;
+
+		&:hover{
+			background-color: darken(#ddd, 8%);
+		}
+	}
+
+}
+
