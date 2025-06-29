@@ -1,0 +1,135 @@
+/* fonts-overrides.css */
+
+/* 1. Define your @font-face blocks (if not already in style.css) */
+/* Load Marydale from Adobe Typekit */
+@import url('https://use.typekit.net/omj6rft.css');
+
+/* Webfont: Travelia-Light */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-Light.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/Travelia-Light.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/Travelia-Light.woff') format('woff'),
+    /* Modern Browsers */
+    url('fonts/Travelia-Light.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('fonts/Travelia-Light.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-Regular.woff2') format('woff2'),
+    url('fonts/Travelia-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold (600) — if you need it elsewhere */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-SemiBold.woff2') format('woff2'),
+    url('fonts/Travelia-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-Bold.woff2') format('woff2'),
+    url('fonts/Travelia-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold (800) */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-ExtraBold.woff2') format('woff2'),
+    url('fonts/Travelia-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black (900) */
+@font-face {
+  font-family: 'Travelia';
+  src: url('fonts/Travelia-Black.woff2') format('woff2'),
+    url('fonts/Travelia-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Force-apply to your elements */
+h1 {
+  font-family: 'Travelia', sans-serif !important;
+  font-weight: 900 !important;
+}
+
+/* Override headings to use Marydale */
+
+/* H2 uses the 900-weight Marydale */
+h2 {
+  font-family: 'marydale', sans-serif !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
+
+/* H3 uses the 700-weight Marydale */
+h3 {
+  font-family: 'marydale', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+/* (Optional) Fallback for any other element you’d like in Regular weight */
+.some-selector {
+  font-family: 'marydale', sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+
+h4 {
+  font-family: 'Travelia', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+p {
+  font-family: 'Travelia', sans-serif !important;
+  font-weight: 600;
+}
+
+h5,
+h6 {
+  font-family: 'Travelia', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 5. Form elements & buttons too */
+input,
+textarea,
+button,
+select,
+option,
+li,
+ol {
+  font-family: 'Travelia', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+mil-thin {
+  font-weight: 400 !important;
+}
