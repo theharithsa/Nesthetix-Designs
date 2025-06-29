@@ -88,7 +88,7 @@ h2 {
 }
 
 /* H3 uses the 700-weight Marydale */
-h3 {
+h3, a, li {
   font-family: 'marydale', sans-serif !important;
   font-weight: 700 !important;
   font-style: normal !important;
@@ -124,7 +124,6 @@ textarea,
 button,
 select,
 option,
-li,
 ol {
   font-family: 'Travelia', sans-serif !important;
   font-weight: 700 !important;
