@@ -705,14 +705,34 @@ img {
   background-color: #CAAB06;
 }
 
+
 .wpo-page-title {
-  background: url(../imagesMod/contactUs_Page.jpg) no-repeat center top/cover;
+  background: url(../imagesMod/cover/cover1.jpg) no-repeat center top/cover;
   min-height: 450px;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 1;
+}
+
+#title-about{
+   background: url(../imagesMod/cover/cover2.jpg) no-repeat center top/cover;
+}
+#title-service{
+   background: url(../imagesMod/cover/cover3.jpg) no-repeat center top/cover;
+}
+#title-service-single{
+   background: url(../imagesMod/cover/cover4.jpg) no-repeat center top/cover;
+}
+#title-project{
+   background: url(../imagesMod/cover/cover5.jpg) no-repeat center top/cover;
+}
+#title-project-single{
+   background: url(../imagesMod/cover/cover6.jpg) no-repeat center top/cover;
+}
+#title-contact{
+   background: url(../imagesMod/cover/cover7.jpg) no-repeat center top/cover;
 }
 @media (max-width: 767px) {
   .wpo-page-title {
@@ -5140,6 +5160,11 @@ hero style 3
 .wpo-project-area-s3 .wpo-project-wrap .wpo-project-item:hover .wpo-project-img .right-border::after {
     height: 120px;
   }
+#project1{
+  height: 80% no-repeat center top/cover;
+}
+
+
 }
 .wpo-project-area .wpo-project-wrap .wpo-project-item:hover .wpo-project-text,
 .wpo-project-area-s2 .wpo-project-wrap .wpo-project-item:hover .wpo-project-text,
