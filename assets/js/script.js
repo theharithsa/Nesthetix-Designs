@@ -815,7 +815,7 @@
 
                 phone: "required",
 
-                adress: "required",
+                address: "required",
 
                 service: "required",   
 
@@ -825,7 +825,7 @@
                 name: "Please enter your name",
                 email: "Please enter your email address",
                 phone: "Please enter your phone number",
-                adress: "Please enter your adress",
+                address: "Please enter your address",
                 service: "Please select your contact service",
             },
 
